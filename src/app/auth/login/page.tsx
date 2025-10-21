@@ -1,20 +1,32 @@
-const page = () => {
+const Page = () => {
   return (
-    <div className="grid grid-cols-1 h-screen grid-rows-1 md:grid-cols-3">
-        <section className="flex flex-col justify-start bg-[#f9f9f9] items-center w-full">
-           <div className="flex flex-col items-center">
-                <h1>Agendei!</h1>
-                <h2>Login</h2>
-           </div>
-           <div>
-                {/* componente  */}
-           </div>
-        </section>
-        <section className="hidden md:block md:col-span-2 bg-[#1c1c1c] w-full">
-            <p>imagem</p>
-        </section>
-    </div>
+    <main className="grid grid-cols-1 h-screen grid-rows-1 md:grid-cols-3">
+      
+      {/* === Coluna de Cadastro === */}
+      <section className="flex flex-col justify-start bg-[#f9f9f9] items-center w-full p-6">
+        <header className="flex flex-col items-center mb-6">
+          <h1 className="text-2xl font-bold">Agendei!</h1>
+          <h2 className="text-lg text-gray-600">Login</h2>
+        </header>
+
+        <article className="w-full max-w-md">
+          {/* componente de formulário ou conteúdo principal */}
+        </article>
+        <footer>
+          {/* botões, voltar / proximo / enviar etc */}
+        </footer>
+      </section>
+
+      {/* === Coluna de Imagem / Lado direito === */}
+      <aside className="hidden md:flex md:col-span-2 bg-[#1c1c1c] w-full justify-center items-center">
+        <figure>
+          {/* Substituir por uma imagem real futuramente */}
+          <p className="text-white">imagem</p>
+        </figure>
+      </aside>
+
+    </main>
   )
 }
 
-export default page
+export default Page

@@ -1,40 +1,33 @@
-const page = () => {
+const Page = () => {
   return (
-<div className="flex items-center justify-center w-screen h-screen">
-      <section className="flex shadow-lg border rounded-lg h-[90vh] w-[50vw]">
-        {/* Grid principal */}
-        <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-1 w-full h-full">
+    <main className="grid grid-cols-1 h-screen grid-rows-1 md:grid-cols-3">
+      
+      {/* === Coluna de Cadastro === */}
+      <section className="flex flex-col justify-start bg-[#f9f9f9] items-center w-full p-6">
+        <header className="flex flex-col items-center mb-6">
+          <h1 className="text-2xl font-bold">Agendei!</h1>
+          <h2 className="text-lg text-gray-600">Cadastro</h2>
+        </header>
 
-          {/* Lado esquerdo: imagem ou conteúdo ilustrativo */}
-          <figure className="bg-purple-500 hidden md:flex md:justify-center md:items-center md:text-center">
-            <p className="text-white">aqui vem uma imagem ou algo assim</p>
-          </figure>
-
-          {/* Lado direito: conteúdo */}
-          <main className="col-span-2 grid grid-cols-1 grid-rows-3">
-            
-            {/* Header com título e subtítulo */}
-            <header>
-              <h1>Agendei!</h1>
-              <h2>Cadastre-se</h2>
-              <p>barra de progresso</p>
-            </header>
-
-            {/* Conteúdo do passo a passo */}
-            <section>
-              {/* aqui vem conteudo de passo a passo */}
-            </section>
-
-            {/* Footer do conteúdo */}
-            <footer>
-              {/* footer */}
-            </footer>
-
-          </main>
-        </div>
+        <article className="w-full max-w-md">
+          {/* componente de formulário ou conteúdo principal */}
+        </article>
+        <footer>
+          {/* botões, voltar / proximo / enviar etc */}
+        </footer>
+        
       </section>
-    </div>
+
+      {/* === Coluna de Imagem / Lado direito === */}
+      <aside className="hidden md:flex md:col-span-2 bg-[#1c1c1c] w-full justify-center items-center">
+        <figure>
+          {/* Substituir por uma imagem real futuramente */}
+          <p className="text-white">imagem</p>
+        </figure>
+      </aside>
+
+    </main>
   )
 }
 
-export default page
+export default Page

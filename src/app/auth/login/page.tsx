@@ -5,7 +5,6 @@ const page = () => {
            <div className="flex flex-col items-center">
                 <h1>Agendei!</h1>
                 <h2>Login</h2>
-                <p>barra progresso</p>
            </div>
            <div>
                 {/* componente  */}

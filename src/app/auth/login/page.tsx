@@ -1,3 +1,4 @@
+import FieldLogin from "./components/field-login"
 const Page = () => {
   return (
     <main className="grid grid-cols-1 h-screen grid-rows-1 md:grid-cols-3">
@@ -9,12 +10,8 @@ const Page = () => {
           <h2 className="text-lg text-gray-600">Login</h2>
         </header>
 
-        <article className="w-full max-w-md">
-          {/* componente de formulário ou conteúdo principal */}
-        </article>
-        <footer>
-          {/* botões, voltar / proximo / enviar etc */}
-        </footer>
+        <FieldLogin/>
+        
       </section>
 
       {/* === Coluna de Imagem / Lado direito === */}

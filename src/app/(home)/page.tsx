@@ -1,8 +1,11 @@
+import SectionCarousel from "./components/sectionCarousel";
 
 export default function Home() {
   return (
     <div>
-      <p>Página de inicio</p>
+      <SectionCarousel title = {"favoritos"} type="favorite"/>
+      <SectionCarousel title = {"barbeiro"} type="store" storeType="barbeiros"/>
+
     </div>
   );
 }

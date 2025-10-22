@@ -1,7 +1,7 @@
 import FieldLogin from "./components/field-login"
 const Page = () => {
   return (
-    <main className="grid grid-cols-1 h-screen grid-rows-1 md:grid-cols-3">
+    <main className="grid grid-cols-1 h-[93vh] grid-rows-1 md:grid-cols-3">
       
       {/* === Coluna de Cadastro === */}
       <section className="flex flex-col justify-start bg-[#f9f9f9] items-center w-full p-6">
